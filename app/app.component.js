@@ -11,13 +11,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var PonyRacerAppComponent = (function () {
     function PonyRacerAppComponent() {
+        this.numberOfUsers = 146;
+        this.user = { name: 'Cedric' };
     }
+    PonyRacerAppComponent.prototype.onNewRace = function () {
+    };
     return PonyRacerAppComponent;
 }());
 PonyRacerAppComponent = __decorate([
     core_1.Component({
         selector: 'ponyracer-app',
-        template: '<h1>PonyRacer</h1>' // Шаблон
+        // Шаблон
+        template: "<h1>PonyRacer</h1>  \n               <h2>{{numberOfUsers}} users</h2>\n               <h2>Welcome {{user?.name}}</h2>\n               <ns-races (newRaceAvaible)=\"onNewRace()\"></ns-races>\n               "
     })
 ], PonyRacerAppComponent);
 exports.PonyRacerAppComponent = PonyRacerAppComponent;

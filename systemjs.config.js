@@ -21,7 +21,8 @@
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // дополнительные пакеты
-      'rxjs': 'npm:rxjs'//,
+      'rxjs': 'npm:rxjs',
+      'moment': 'npm:moment/moment.js'
       // 'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
     // пакеты, уазывающие правила загрузки файлов без имени и разширений

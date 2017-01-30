@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     selector: 'ns-races',
     template: `<div *ngIf="races.length > 0"> <h2>Races</h2> </div> 
     <ul>
-      <li *ngFor="let race of races">{{race.name}}</li>
+      <li *ngFor="let race of races; let i = index">{{i}} - {{race.name}}</li>
     </ul>
     <button (click)="refreshRaces()">Refresh the races list</button>
     <p>{{races.length}} races</p>
